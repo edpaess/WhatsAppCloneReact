@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D2DBDC;
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida';
+}
+
+.app-window {
+  display: flex;
+  height: 100vh;
+  background-color: #EDEDED;
+}
+
+.sidebar {
+  width: 30%;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #3F4448;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #2A2F32;
+}
+
+.header--avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.header--buttons{
+  display: flex;
+}
+
+.header--btn {
+  width: 50px;
+  border-radius: 20;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search{
+  background-color: #131c21;
+  border-bottom: 1px solid #EEE;
+  padding: 5px 15px;
+  border-bottom: 1px solid #242d32;
+}
+
+.search--input {
+  background-color: #323739;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search--input input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  margin-left: 10px;
+  color: white;
+}
+
+.chatlist {
+  flex: 1;
+  background-color: #131c21;
+  overflow-y: auto;
+}
+
+.chatlist::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.chatlist::-webkit-scrollbar-thumb {
+  background-color: #394045;
+}
+.contentarea {
+  flex: 1;
+  background-color: #F8F9FA;
+}

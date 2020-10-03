@@ -1,0 +1,9 @@
+.chatIntro{
+    background: url('../../../src/assets/fundo-inicio.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom: 6px solid #054740;
+}
